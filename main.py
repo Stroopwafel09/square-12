@@ -4,6 +4,7 @@ import json
 import os
 import discord
 import dotenv
+import webserver
 
 from discord.ext import commands
 from client import Client, get_prefix
@@ -48,3 +49,4 @@ async def main():
 
 
 asyncio.run(main())
+webserver.keep_alive()
